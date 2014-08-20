@@ -11,7 +11,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Acme\\DemoBundle": "src/" }
+        "psr-4": { "Acme\\DemoBundle\\": "src/" }
     },
     "minimum-stability": "dev",
     "require": {
