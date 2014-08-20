@@ -1,13 +1,14 @@
 language: php
 
 php:
-  - 5.3
+#  - 5.3
+#  - 5.4
   - 5.5
-  - hhvm
+#  - hhvm
 
-matrix:
-  allow_failures:
-    - php: hhvm
+#matrix:
+#  allow_failures:
+#    - php: hhvm
 
 before_script:
   - composer self-update
@@ -20,5 +21,6 @@ before_script:
 script: phpunit -c app
 
 notifications:
-  irc: "irc.freenode.org#symfony-cmf"
-  email: "symfony-cmf-devs@googlegroups.com"
+#  irc: "irc.freenode.org#symfony-cmf"
+#  email: "symfony-cmf-devs@googlegroups.com"
+  email: "cordoval@gmail.com"

@@ -14,9 +14,11 @@ abstract class WebTestCase extends BaseWebTestCase
             return;
         }
 
-        $this->loadFixtures(array(
-            'Acme\DemoBundle\DataFixtures\PHPCR\LoadDemoData',
-        ), null, 'doctrine_phpcr');
+        $this->loadFixtures(
+            array('Acme\DemoBundle\DataFixtures\PHPCR\LoadDemoData'),
+            null,
+            'doctrine_phpcr'
+        );
 
         self::$fixturesLoaded = true;
     }
