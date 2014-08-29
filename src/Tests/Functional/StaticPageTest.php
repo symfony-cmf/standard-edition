@@ -35,4 +35,3 @@ class StaticPageTest extends WebTestCase
         $this->assertCount(1, $crawler->filter(sprintf('body:contains("%s")', $body)), 'Page does not contain the text: '.$body);
     }
 }
-
