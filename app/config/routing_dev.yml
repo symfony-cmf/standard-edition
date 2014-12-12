@@ -10,5 +10,37 @@ _configurator:
     resource: "@SensioDistributionBundle/Resources/config/routing/webconfigurator.xml"
     prefix:   /_configurator
 
+page_show:
+    path: /pages/{id}
+    methods: [GET]
+    defaults:
+        _controller: cmf.controller.page:showAction
+    requirements:
+        id: .*
+
+page_index:
+    path: /pages
+    methods: [GET]
+    defaults:
+        _controller: cmf.controller.page:indexAction
+
+page_create:
+    path: /pages/new
+    methods: [GET, POST]
+    defaults:
+        _controller: cmf.controller.page:createAction
+
+page_update:
+    path: /pages/{id}/edit
+    methods: [GET, PUT]
+    defaults:
+        _controller: cmf.controller.page:updateAction
+
+page_delete:
+    path: /pages/{id}
+    methods: [DELETE]
+    defaults:
+        _controller: cmf.controller.page:deleteAction
+
 _main:
     resource: routing.yml

@@ -39,6 +39,9 @@ class AppKernel extends Kernel
 
             // Remove this Bundle when using the SE as the basis for a new project
             new Acme\DemoBundle\AcmeDemoBundle(),
+
+            new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
+            new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
