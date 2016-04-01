@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of the Symfony CMF package.
- *
- * (c) 2011-2015 Symfony CMF
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug\Debug;
 
@@ -28,7 +19,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 }
 
 /**
- * @var Composer\Autoload\ClassLoader
+ * @var Composer\Autoload\ClassLoader $loader
  */
 $loader = require __DIR__.'/../app/autoload.php';
 Debug::enable();
