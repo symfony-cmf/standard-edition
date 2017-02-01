@@ -10,7 +10,6 @@ class AppKernel extends Kernel
         $bundles = [
             // Symfony Standard Edition Bundles
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
@@ -31,9 +30,6 @@ class AppKernel extends Kernel
 
             new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-
-            new Symfony\Cmf\Bundle\CreateBundle\CmfCreateBundle(),
-            new FOS\RestBundle\FOSRestBundle(),
 
             // Application bundles
             new AppBundle\AppBundle(),
