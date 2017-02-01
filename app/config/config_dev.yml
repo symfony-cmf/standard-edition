@@ -30,8 +30,5 @@ monolog:
         #    type:   chromephp
         #    level:  info
 
-assetic:
-    use_controller: '%use_assetic_controller%'
-
 #swiftmailer:
-#    delivery_address: me@example.com
+#    delivery_addresses: ['me@example.com']
