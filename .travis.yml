@@ -1,8 +1,8 @@
 language: php
 
 php:
-  - 5.5
   - 5.6
+  - 7.0
   - hhvm
 
 sudo: false
@@ -18,7 +18,7 @@ env:
 matrix:
   finish_fast: true
   include:
-    - php: 7.0
+    - php: 7.1
       env: COMPOSER_CMD=install
 
 before_install:
@@ -36,4 +36,3 @@ script: phpunit
 
 notifications:
   irc: "irc.freenode.org#symfony-cmf"
-  email: "symfony-cmf-devs@googlegroups.com"
