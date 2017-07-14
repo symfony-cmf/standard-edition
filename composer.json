@@ -45,7 +45,6 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "symfony/phpunit-bridge": "~3.0"
     },
-    "minimum-stability": "RC",
     "prefer-stable": true,
     "scripts": {
         "symfony-scripts": [
