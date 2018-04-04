@@ -13,14 +13,15 @@ use cases, and can be used to create a new Symfony/CMF project from scratch.
 
 ## Requirements
 
-* Symfony 2.3.x
+* PHP 5.6 or 7
+* Works with Symfony 3.2 or newer
 * See also the `require` section of [composer.json](composer.json)
 
 ## Documentation
 
 For the install guide and reference, see:
-
-* [Symfony CMF standard edition documentation](http://symfony.com/doc/master/cmf/book/installation.html)
+* Installation of the code works the same as for the [Symfony standard edition](http://symfony.com/doc/current/setup.html)
+* [Symfony CMF introduction](http://symfony.com/doc/master/cmf/quick_tour/the_big_picture.html#setting-up-the-database)
 
 See also:
 
