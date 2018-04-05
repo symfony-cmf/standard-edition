@@ -26,23 +26,23 @@
     },
     "require": {
         "php": "^5.6|^7.0",
-        "symfony/symfony": "^3.2",
-        "doctrine/orm": "^2.5",
-        "doctrine/doctrine-bundle": "^1.6",
         "doctrine/data-fixtures": "^1.0",
+        "doctrine/doctrine-bundle": "^1.6",
         "doctrine/doctrine-cache-bundle": "^1.2",
-        "symfony/swiftmailer-bundle": "^2.3.10",
-        "symfony/monolog-bundle": "^3.0.2",
-        "symfony/polyfill-apcu": "^1.0",
+        "doctrine/orm": "^2.5",
+        "jackalope/jackalope-doctrine-dbal": "~1.1",
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "symfony-cmf/symfony-cmf": "2.0.*",
-        "jackalope/jackalope-doctrine-dbal": "~1.1"
+        "symfony/monolog-bundle": "^3.0.2",
+        "symfony/polyfill-apcu": "^1.0",
+        "symfony/swiftmailer-bundle": "^2.3.10",
+        "symfony/symfony": "^3.2",
+        "symfony-cmf/symfony-cmf": "2.0.*"
     },
     "require-dev": {
+        "incenteev/composer-parameter-handler": "~2.0",
         "liip/functional-test-bundle": "~1.0",
         "sensio/generator-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0",
         "symfony/phpunit-bridge": "^3.3"
     },
     "prefer-stable": true,
@@ -62,6 +62,9 @@
         "post-update-cmd": [
             "@symfony-scripts"
         ]
+    },
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "symfony-app-dir": "app",
